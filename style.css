@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    _overflow-y: scroll;
+    _overflow-x: auto;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, p, button, input, select, td, th, table, pre, strong, b, i, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6, input, button, pre, textarea, select {
+    font-family: 'Nanum Gothic', dotum, sans-serif;
+    font-size: 12px;
+    color: #555;
+}
+
+img, fieldset, iframe, form {
+    border: 0 none;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+img, input, select, button, textarea {
+    vertical-align: middle;
+}
+
+i, em, address {
+    font-style: normal;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+label {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #373737;
+    font-weight: normal;
+    cursor: pointer;
+    outline: none;
+}
+
+a:hover {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:active {
+    font-weight: normal;
+    text-decoration: none;
+    background: none;
+}
+
+a:visited {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:link {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+    url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+    url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+    url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+    url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),
+    url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
+    url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 800;
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot);
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+    url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff2) format('woff2'),
+    url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff) format('woff'),
+    url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+
+#wrap {
+    position: relative;
+    width: 100%;
+}
+
+#contents {
+    position: relative;
+    width: 100%;
+}
+
+.bnr01 {
+    position: relative;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    height: 240px;
+    background-color: #d7d7d7;
+}
+
+.bnr01 .list_bnr {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.bnr01 .list_bnr li {
+    float: left;
+    width: 350px;
+    height: 240px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.bnr01 .list_bnr li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 19px;
+    margin-left: -13px;
+    height: 202px;
+    border-left: 1px solid #bbb;
+    z-index: 13;
+}
+
+.bnr01 .list_bnr li:first-child:after {
+    display: none;
+}
+
+.bnr01 .list_bnr li:first-child {
+    margin-left: 0;
+}
+
+.bnr01 .list_bnr li span {
+    display: block;
+    letter-spacing: -1px;
+}
+
+.bnr01 .list_bnr .bnr_info {
+    position: absolute;
+    z-index: 11;
+    top: 49px;
+    left: 15px;
+}
+
+.bnr01 .list_bnr .bnr_info .tit1 {
+    font-size: 15px;
+    padding: 0 0 0 0;
+    color: #000;
+    letter-spacing: 0;
+}
+
+.bnr01 .list_bnr .bnr_info .tit2 {
+    font-size: 23px;
+    padding: 10px 0 0 0;
+    color: #000;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.bnr01 .list_bnr .bnr_info .line {
+    display: inline-block;
+    width: 20px;
+    border-bottom: 1px solid #000;
+    height: 1px;
+    margin: 20px 0 4px 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.bnr01 .list_bnr .bnr_info .sub {
+    font-size: 14px;
+    color: #666;
+    line-height: 17px;
+    padding: 6px 0 0 0;
+}
+
+.bnr01 .list_bnr li:hover .bnr_info .tit2 {
+    color: #ff3249;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.bnr01 .list_bnr li:hover .bnr_info .line {
+    width: 110px;
+    border-bottom: 1px solid #ff3249;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.bnr01 .list_bnr .thumb_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.items01 {
+    position: relative;
+    width: 1100px;
+    margin: 50px auto 0 auto;
+}
+
+.items01 h2.tit {
+    position: relative;
+    display: block;
+    width: 1100px;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #000 !important;
+    line-height: 50px;
+    letter-spacing: -2px;
+}
+
+.items01 h2.tit > em {
+    font-size: 13px;
+    color: #333 !important;
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+.items01 h2.tit > a {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #111;
+}
+
+.items01 h2.tit > a:hover {
+    text-decoration: none;
+}
+
+.items01 .hr {
+    width: 1100px;
+    border-top: 2px solid #222;
+    overflow: hidden;
+}
+
+.items01 .box {
+    margin-top: 20px;
+    overflow: hidden;
+    height: 390px;
+}
+
+.items01 .list_items li {
+    float: left;
+    width: 258px;
+    margin: 0 20px 0 0;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+}
+
+.items01 .list_items li:nth-child(4n) {
+    margin-right: 0 !important;
+}
+
+.items01 .list_items li:hover {
+    border: 1px solid #333;
+}
+
+.items01 .list_items li a {
+    display: block;
+    text-decoration: none;
+}
+
+.items01 .list_items .thumb_img {
+    overflow: hidden;
+}
+
+.items01 .list_items .thumb_img img {
+    width: 100%;
+}
+
+.items01 .list_items .price_o,
+.items01 .list_items .brand,
+.items01 .list_items .pname,
+.items01 .list_items .price_info,
+.items01 .list_items .thumb_img {
+    display: block;
+}
+
+.items01 .list_items span.brand {
+    font-size: 14px;
+    font-family: 'Nanum Gothic', dotum, sans-serif;
+    padding: 12px 15px 1px 15px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+.items01 .list_items span.pname {
+    padding: 4px 15px 0 15px;
+    line-height: 19px;
+    height: 40px;
+    font-family: 'Nanum Gothic', dotum, sans-serif;
+    font-size: 13px;
+    color: #000;
+    overflow: hidden;
+}
+
+.items01 .list_items span.pname:hover {
+    text-decoration: underline;
+}
+
+.items01 .list_items span.price_info {
+    position: relative;
+    padding: 12px 10px 15px 10px;
+    height: 32px;
+    display: block;
+}
+
+.items01 .list_items .price_info span.salep {
+    position: absolute;
+    right: 15px;
+    top: 27px;
+    display: inline-block;
+    font-size: 20px;
+    color: #ff3249;
+    font-weight: 600;
+    font-family: 'Nanum Gothic', dotum, sans-serif;
+}
+
+.items01 .list_items .price_info span.salep em {
+    font-size: 15px;
+}
+
+.items01 .list_items .price_info span.price_o {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.items01 .list_items .price_info span.price_n {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.items01 .list_items .price_info span.price_n em {
+    font-size: 12px;
+}

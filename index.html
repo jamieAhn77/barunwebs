@@ -1,63 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<style>
-*	{ margin:0;padding:0; }
-html { _overflow-y:scroll;_overflow-x:auto; }
-html,body { width:100%;height:100%; }
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,input,select,td,th,table,pre,strong,b,i,textarea { margin:0;padding:0; }
-body,h1,h2,h3,h4,h5,h6,input,button,pre,textarea,select { font-family:'Nanum Gothic',dotum,sans-serif;font-size:12px;color:#555; }
-img,fieldset,iframe,form { border:0 none; }
-ol,ul,li { list-style:none; }
-img,input,select,button,textarea { vertical-align:middle; }
-i,em,address { font-style:normal; }
-table { width:100%;border-spacing:0;border-collapse:collapse; }
-label { cursor:pointer; }
-h1, h2, h3, h4, h5, h6 { font-weight:normal;font-size:100%; }
-
-a { text-decoration:none;color:#373737;font-weight:normal;cursor:pointer;outline:none; }
-a:hover { font-weight:normal;text-decoration:none; }
-a:active { font-weight:normal;text-decoration:none;background:none; }
-a:visited { font-weight:normal;text-decoration:none; }
-a:link { font-weight:normal;text-decoration:none; }
-
-#wrap {position:relative;width:100%;}
-#header_top {position:relative;margin:0 auto;width:980px;height:45px;background-color:#24292e;}
-#header_top h2 {font-weight:bold;color:#fff;line-height:45px;}
-#header_top .items {position:relative;display:block;width:100%;margin-top:10px;}
-#header_top .items li {float:left;display:inline-block;margin:0 0 20px;padding:0 10px;width:25%;box-sizing:border-box;/*border:1px solid #ff6600;*/}
-#header_top .items li img.thumb {max-width:100%;border:1px solid #ddd;box-sizing:border-box;}
-#header_top .items li p.name {margin-top:10px;height:45px;font-weight:bold;overflow:hidden;}
-</style>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
+
 <body>
 <div id="wrap">
-    <div id="header_top">
-        <h2>Best Products</h2>
-        <ul class="items">
-            <li>
-                <img src="http://transmall.co.kr/index/_upload/goods/708/20180307/111722_3.jpg" class="thumb" />
-                <p class="name">스위스밀리터리 리튬이온 12V 전동 햄머드릴 SL-12V</p>
-            </li>
-            <li>
-                <img src="http://transmall.co.kr/index/_upload/goods/708/20180307/111721_3.jpg" class="thumb" />
-                <p class="name">스위스밀리터리 헤어드라이기 (골드&화이트) SMA-RW1800</p>
-            </li>
-            <li>
-                <img src="http://transmall.co.kr/index/_upload/goods/708/20180308/111863_3.jpg" class="thumb" />
-                <p class="name">아이키 초음파 무선 거리측정기 HT001</p>
-            </li>
-            <li>
-                <img src="http://transmall.co.kr/index/_upload/goods/708/20180308/111841_3.jpg" class="thumb" />
-                <p class="name">KIDS 티셔츠파우치S</p>
-            </li>
-            <li>thumb img</li>
-            <li>thumb img</li>
-            <li>thumb img</li>
-            <li>thumb img</li>
-        </ul>
+    <div id="contents">
+        <div class="bnr01">
+            <ul class="list_bnr">
+                <li>
+                    <div>
+                        <a href="">
+                            <span class="bnr_info">
+                                <span class="tit1">추운 겨울 내방에서 차리는</span>
+                                <span class="tit2">진수성찬</span>
+                                <span class="line"></span>
+                                <span class="sub">집반찬, 도시락반찬 외<br/>온가족이 좋아하는<br/>반찬, 나물 모음전</span>
+                            </span>
+                            <span class="thumb_img"><img
+                                    src="images/banner/1511746892_4cc584f0451e4aca05028220fb87f200.jpg"/></span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="">
+                            <span class="bnr_info">
+						        <span class="tit1">늦지않게 준비하자</span>
+						        <span class="tit2">월동준비 돌입!</span>
+						        <span class="line"></span>
+						        <span class="sub">온열매트,히터,난방텐트 등<br/>따뜻하게 겨울 보내는 방법!</span>
+					        </span>
+                            <span class="thumb_img"><img
+                                    src="images/banner/1511746892_f5823bedffc1d135d4b264eb7f44a5ac.jpg"/></span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="">
+                            <span class="bnr_info">
+    						    <span class="tit1">패션은 핫하게</span>
+		    				    <span class="tit2">아우터는 따뜻하게</span>
+	    					    <span class="line"></span>
+			    			    <span class="sub">지금 부터 쭈욱 입을수 있는<br/>자켓, 아우터 모음전 </span>
+    					    </span>
+                            <span class="thumb_img"><img
+                                    src="images/banner/1511746892_f3e0b9dc1fccffc157fe3eddfd33c4a3.jpg"/></span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="items01">
+            <h2 class="tit">지금 가장 인기있는 상품<em class="ls0">최상의 제품을 추천합니다.</em><a>더보기</a></h2>
+            <div class="hr"></div>
+            <div class="box">
+                <ul class="list_items">
+                    <li>
+                        <a>
+                            <span class="thumb_img"><img
+                                    src="images/goods/176065_a_320.jpg"></span>
+                            <span class="brand">좋은생활지웰</span>
+                            <span class="pname">지웰 8036 레드 핸디형 진공청소기 기본형</span>
+                            <span class="price_info">
+                                <span class="salep">  37<em>%</em> </span>
+                                <span class="price_o">143,000<em>원</em></span>
+                                <span class="price_n">90,800<em>원</em></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="thumb_img"><img
+                                    src="images/goods/1206361_a_320.jpg"></span>
+                            <span class="brand">라네즈</span>
+                            <span class="pname">라네즈 안티폴루션 마스크 (1매)</span>
+                            <span class="price_info">
+                                <span class="salep">  26<em>%</em> </span>
+                                <span class="price_o">4,000<em>원</em></span>
+                                <span class="price_n">2,970<em>원</em></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="thumb_img"><img
+                                    src="images/goods/216691_a_320.jpg"></span>
+                            <span class="brand">기타</span>
+                            <span class="pname">[장금희여사의 다사랑김치] 다사랑 열무김치 10kg</span>
+                            <span class="price_info">
+                                <span class="salep">  26<em>%</em> </span>
+                                <span class="price_o">90,600<em>원</em></span>
+                                <span class="price_n">67,000<em>원</em></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="thumb_img"><img
+                                    src="images/goods/210619_a_320.jpg"></span>
+                            <span class="brand">폭스타일</span>
+                            <span class="pname">[폭스타일][실버] 3mm 볼 목걸이</span>
+                            <span class="price_info">
+                                <span class="salep">  31<em>%</em> </span>
+                                <span class="price_o">52,000<em>원</em></span>
+                                <span class="price_n">36,000<em>원</em></span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
+
 </body>
 </html>
